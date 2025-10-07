@@ -40,7 +40,7 @@ print("\n LE COMBAT COMMENCE !\n")
 # 1 ére attaque
 input()
 print(f"{titan1_name}, à vous de commencer !")
-print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
+print(f"{titan1_name} : {titan1_hp} PV / {titan2_name} : {titan2_hp} PV")
 random_attack = random.randint(0,1)
 random_attack = bool(random_attack)
 
@@ -57,7 +57,7 @@ else:
 # 2 éme attaque
 input()
 print(f"{titan2_name}, à vous de jouer !")
-print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
+print(f"{titan1_name} : {titan1_hp} PV / {titan2_name} : {titan2_hp} PV")
 random_attack = random.randint(0,1)
 random_attack = bool(random_attack)
 
@@ -74,7 +74,7 @@ else:
 # 3 éme attaque
 input()
 print(f"{titan1_name}, à vous de jouer !")
-print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
+print(f"{titan1_name} : {titan1_hp} PV / {titan2_name} : {titan2_hp} PV")
 random_attack = random.randint(0,1)
 random_attack = bool(random_attack)
 
@@ -91,7 +91,7 @@ else:
 # 4 éme attaque 
 input()
 print(f"{titan2_name}, à vous de jouer !")
-print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
+print(f"{titan1_name} : {titan1_hp} PV / {titan2_name} : {titan2_hp} PV")
 random_attack = random.randint(0,1)
 random_attack = bool(random_attack)
 
@@ -108,7 +108,7 @@ else:
 #Résultat final
 input()
 print("\n FIN DU COMBAT ! \n")
-print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
+print(f"{titan1_name} : {titan1_hp} PV / {titan2_name} : {titan2_hp} PV")
 
 
 if titan1_hp > titan2_hp:
