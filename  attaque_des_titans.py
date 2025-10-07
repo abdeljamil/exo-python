@@ -38,6 +38,7 @@ print("\n LE COMBAT COMMENCE !\n")
 
 #-----------------------------------------------------------
 # 1 ére attaque
+input()
 print(f"{titan1_name}, à vous de commencer !")
 print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
 random_attack = random.randint(0,1)
@@ -54,6 +55,7 @@ else:
 
 #------------------------------------------------------------
 # 2 éme attaque
+input()
 print(f"{titan2_name}, à vous de jouer !")
 print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
 random_attack = random.randint(0,1)
@@ -70,6 +72,7 @@ else:
 
 #------------------------------------------------------------------------------------
 # 3 éme attaque
+input()
 print(f"{titan1_name}, à vous de jouer !")
 print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
 random_attack = random.randint(0,1)
@@ -86,6 +89,7 @@ else:
 
 #------------------------------------------------------------------------------------
 # 4 éme attaque 
+input()
 print(f"{titan2_name}, à vous de jouer !")
 print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
 random_attack = random.randint(0,1)
@@ -102,6 +106,7 @@ else:
 
 #----------------------------------------------------------------------------------------
 #Résultat final
+input()
 print("\n FIN DU COMBAT ! \n")
 print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
 
