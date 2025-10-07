@@ -14,4 +14,64 @@ EXERCICE PYTHON #3
     - Pour les plus avancés, vous pourrez optimiser ce code ensuite en l'adaptant avec vos connaissance (boucles,fonction,classe,etc..)
 
 """
+import random
+
+random_attack = True # True = Face / False = pile
+random_damage = 0
+
+print("\n LE COMBAT COMMENCE !\n")
+
+#-----------------------------------------------------------
+# 1 ére attaque
+
+random_attack = random.randint(0,1)
+random_attack = bool(random_attack)
+
+if random_attack == True:
+    #Si l'attaque réussit
+
+    random_damage = random.randint(0,100)
+else:
+    #Si l'attaque échoue 
+    pass
+
+#------------------------------------------------------------
+# 2 éme attaque
+
+random_attack = random.randint(0,1)
+random_attack = bool(random_attack)
+
+if random_attack == True:
+    #Si l'attaque réussit
+    random_damage = random.randint(0,100)
+else:
+    #Si l'attaque échoue
+    pass
+
+#------------------------------------------------------------------------------------
+# 3 éme attaque
+
+random_attack = random.randint(0,1)
+random_attack = bool(random_attack)
+
+if random_attack == True:
+    #Si l'attaque réussit
+    random_damage = random.randint(0,100)
+else:
+    #Si l'attaque échoue
+    pass
+
+#------------------------------------------------------------------------------------
+# 4 éme attaque 
+
+random_attack = random.randint(0,1)
+random_attack = bool(random_attack)
+
+if random_attack == True:
+    #Si l'attaque réussit
+    random_damage = random.randint(0,100)
+else:
+    #Si l'attaque échoue
+    pass
+
 
