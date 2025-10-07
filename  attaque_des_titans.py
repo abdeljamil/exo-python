@@ -16,8 +16,23 @@ EXERCICE PYTHON #3
 """
 import random
 
-random_attack = True # True = Face / False = pile
+titan1_name = ""
+titan1_hp = 250
+
+titan2_name = ""
+titan2_hp = 250
+
+
+random_attack = True 
 random_damage = 0
+
+titan1_name = input("joueur 1, choisissez un pseudo : ")
+#print("{} est le joueur 1.".format(titan1_name)) python 3.X
+print(f"{titan1_name} est le joueur 1.") # python 3.6 et +
+
+titan2_name = input("joueur 2, choisissez un pseudo : ")
+#print("{} est le joueur 1.".format(titan1_name)) python 3.X
+print(f"{titan2_name} est le joueur 2.") # python 3.6 et +
 
 print("\n LE COMBAT COMMENCE !\n")
 
@@ -29,11 +44,12 @@ random_attack = bool(random_attack)
 
 if random_attack == True:
     #Si l'attaque réussit
-
     random_damage = random.randint(0,100)
+    print(f"{titan1_name} subit une attaque de {titan1_name} qui lui inflige {random_damage} point de dégat")
+    titan2_hp -= random_damage
 else:
     #Si l'attaque échoue 
-    pass
+    print(f"titan1_name" rate son attaque....)
 
 #------------------------------------------------------------
 # 2 éme attaque
@@ -44,9 +60,11 @@ random_attack = bool(random_attack)
 if random_attack == True:
     #Si l'attaque réussit
     random_damage = random.randint(0,100)
+    print(f"{titan1_name} subit une attaque de {titan2_name} qui lui inflige {random_damage} point de dégat")
+    titan1_hp -= random_damage
 else:
     #Si l'attaque échoue
-    pass
+    print(f"titan2_name" rate son attaque....)
 
 #------------------------------------------------------------------------------------
 # 3 éme attaque
@@ -57,9 +75,11 @@ random_attack = bool(random_attack)
 if random_attack == True:
     #Si l'attaque réussit
     random_damage = random.randint(0,100)
+    print(f"{titan1_name} subit une attaque de {titan1_name} qui lui inflige {random_damage} point de dégat")
+    titan2_hp -= random_damage
 else:
     #Si l'attaque échoue
-    pass
+    print(f"titan1_name" rate son attaque....)
 
 #------------------------------------------------------------------------------------
 # 4 éme attaque 
@@ -70,8 +90,12 @@ random_attack = bool(random_attack)
 if random_attack == True:
     #Si l'attaque réussit
     random_damage = random.randint(0,100)
+    print(f"{titan1_name} subit une attaque de {titan2_name} qui lui inflige {random_damage} point de dégat")
+    titan1_hp -= random_damage
 else:
     #Si l'attaque échoue
-    pass
+    print(f"titan2_name" rate son attaque....)
 
-
+#----------------------------------------------------------------------------------------
+#Résultat final
+print("\n FIN DU COMBAT ! \n")
