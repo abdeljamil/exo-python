@@ -97,9 +97,18 @@ if random_attack == True:
     print(f"{titan1_name} subit une attaque de {titan2_name} qui lui inflige {random_damage} point de dégat")
     titan1_hp -= random_damage
 else:
-    #Si l'attaque échoue
+    #Si l'attaque échoue 
     print(f"titan2_name" rate son attaque....)
 
 #----------------------------------------------------------------------------------------
 #Résultat final
 print("\n FIN DU COMBAT ! \n")
+print(f"J1 : {titan1_hp} PV / J2 : {titan2_hp} PV")
+
+
+if titan1_hp > titan2_hp:
+    print(f"{titan1_name} remporte la victoire !")
+elif titan1_hp < titan2_hp:
+    print(f"{titan2_name} remporte la victoire !")
+else:
+    print("Match null!!!") 
